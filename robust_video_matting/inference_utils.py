@@ -80,7 +80,7 @@ class ImageSequenceWriter:
         # frames: [T, C, H, W]
         for t in range(frames.shape[0]):
             to_pil_image(frames[t]).save(os.path.join(
-                self.path, str(self.counter).zfill(4) + '.' + self.extension))
+                self.path, str(self.counter).zfill(8) + '.' + self.extension))
             self.counter += 1
             
     def close(self):
