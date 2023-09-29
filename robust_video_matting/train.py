@@ -94,33 +94,33 @@ from torchvision.utils import make_grid
 from torchvision.transforms.functional import center_crop
 from tqdm import tqdm
 
-from dataset.videomatte import (
+from .dataset.videomatte import (
     VideoMatteDataset,
     VideoMatteTrainAugmentation,
     VideoMatteValidAugmentation,
 )
-from dataset.imagematte import (
+from .dataset.imagematte import (
     ImageMatteDataset,
     ImageMatteAugmentation
 )
-from dataset.coco import (
+from .dataset.coco import (
     CocoPanopticDataset,
     CocoPanopticTrainAugmentation,
 )
-from dataset.spd import (
+from .dataset.spd import (
     SuperviselyPersonDataset
 )
-from dataset.youtubevis import (
+from .dataset.youtubevis import (
     YouTubeVISDataset,
     YouTubeVISAugmentation
 )
-from dataset.augmentation import (
+from .dataset.augmentation import (
     TrainFrameSampler,
     ValidFrameSampler
 )
-from model import MattingNetwork
-from train_config import DATA_PATHS
-from train_loss import matting_loss, segmentation_loss
+from .model import MattingNetwork
+from .train_config import DATA_PATHS
+from .train_loss import matting_loss, segmentation_loss
 
 
 class Trainer:

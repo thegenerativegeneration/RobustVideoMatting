@@ -11,7 +11,7 @@ Converter API
 dependencies = ['torch', 'torchvision']
 
 import torch
-from model import MattingNetwork
+from .model import MattingNetwork
 
 
 def mobilenetv3(pretrained: bool = True, progress: bool = True):
