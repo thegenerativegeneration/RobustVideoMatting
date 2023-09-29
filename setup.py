@@ -20,13 +20,13 @@ if __name__ == '__main__':
     setup(
         name='robust_video_matting',
         version="0.0.1",
-        description='Real-ESRGAN aims at developing Practical Algorithms for General Image Restoration',
+        description='Realtime Robust Video Matting',
         long_description=readme(),
         long_description_content_type='text/markdown',
-        author='Xintao Wang',
-        author_email='xintao.wang@outlook.com',
-        keywords='computer vision, pytorch, image restoration, super-resolution, esrgan, real-esrgan',
-        url='https://github.com/xinntao/Real-ESRGAN',
+        author='thegenerativegeneration',
+        author_email='',
+        keywords='computer vision, pytorch, video matting',
+        url='https://github.com/thegenerativegeneration/RobustVideoMatting',
         include_package_data=True,
         packages=find_packages(),
         classifiers=[
