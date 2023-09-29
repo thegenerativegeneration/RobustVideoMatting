@@ -27,7 +27,6 @@ if __name__ == '__main__':
         author_email='',
         keywords='computer vision, pytorch, video matting',
         url='https://github.com/thegenerativegeneration/RobustVideoMatting',
-        include_package_data=True,
         packages=find_packages(),
         classifiers=[
             'Development Status :: 4 - Beta',
@@ -38,6 +37,5 @@ if __name__ == '__main__':
             'Programming Language :: Python :: 3.8',
         ],
         license='GPLv3',
-        setup_requires=['cython', 'numpy'],
-        install_requires=get_requirements(),
-        zip_safe=False)
+        install_requires=get_requirements()
+    )
